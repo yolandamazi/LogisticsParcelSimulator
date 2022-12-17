@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1670843833 source:c:\users\amazi\onedrive\documentos\universidad\asignaturas\segundo carrera\estructuras de datos\laboratorio\pecl2\main.cpp
+	<iostream>
+	"header.h"
+	"funciones.h"
+	<Lista.h>
+	<ABB.h>
+
+1670775489 c:\users\amazi\onedrive\documentos\universidad\asignaturas\segundo carrera\estructuras de datos\laboratorio\pecl2\header.h
+	<iostream>
+	<list>
+	<cstdlib>
+	<iomanip>
+	<stdlib.h>
+	<fstream>
+	<vector>
+
+1670695403 source:c:\users\amazi\onedrive\documentos\universidad\asignaturas\segundo carrera\estructuras de datos\laboratorio\pecl2\funciones.cpp
+	"header.h"
+	"funciones.h"
+
+1670354675 c:\users\amazi\onedrive\documentos\universidad\asignaturas\segundo carrera\estructuras de datos\laboratorio\pecl2\funciones.h
+
+1670843643 source:c:\users\amazi\onedrive\documentos\universidad\asignaturas\segundo carrera\estructuras de datos\laboratorio\pecl2\src\lista.cpp
+	"Lista.h"
+
+1670762611 c:\users\amazi\onedrive\documentos\universidad\asignaturas\segundo carrera\estructuras de datos\laboratorio\pecl2\include\lista.h
+	"../header.h"
+
+1670777320 source:c:\users\amazi\onedrive\documentos\universidad\asignaturas\segundo carrera\estructuras de datos\laboratorio\pecl2\src\abb.cpp
+	"ABB.h"
+	<../funciones.h>
+
+1670776634 c:\users\amazi\onedrive\documentos\universidad\asignaturas\segundo carrera\estructuras de datos\laboratorio\pecl2\include\abb.h
+	<../header.h>
+	<Lista.h>
+
