@@ -80,19 +80,19 @@ int main(){
                 int c;
                 cout << "\n";
                 cout << "ELIGA UNA DE LAS SIGUIENTES OPCIONES: \n";
-                cout << "1. Insertar una Central de Paquetería \n";
-                cout << "2. Borrar una Central de Paquetería \n";
-                cout << "3. Mostrar paquetes de una Central de Paquetería \n";
-                cout << "4. Estadística de las Centrales de Paquetería de la empresa \n";
-                cout << "5. Buscar paquete según su ID \n";
-                cout << "6. Extraer paquete concreto de una Central de Paquetería \n";
-                cout << "7. Llevar un paquete concreto del CAE a una Central de Paquetería \n";
-                cout << "8. Llevar un paquete concreto de una Central de Paquetería a otra \n";
-                cout << "9. Continuar la distribución de paquetes \n";
+                cout << "1. Insertar una Central de PaqueterÃ­a \n";
+                cout << "2. Borrar una Central de PaqueterÃ­a \n";
+                cout << "3. Mostrar paquetes de una Central de PaqueterÃ­a \n";
+                cout << "4. EstadÃ­stica de las Centrales de PaqueterÃ­a de la empresa \n";
+                cout << "5. Buscar paquete segÃºn su ID \n";
+                cout << "6. Extraer paquete concreto de una Central de PaqueterÃ­a \n";
+                cout << "7. Llevar un paquete concreto del CAE a una Central de PaqueterÃ­a \n";
+                cout << "8. Llevar un paquete concreto de una Central de PaqueterÃ­a a otra \n";
+                cout << "9. Continuar la distribuciÃ³n de paquetes \n";
                 cout << "0. Salir del programa" << endl;
-                cout << "Opción: "; cin >> c;
+                cout << "OpciÃ³n: "; cin >> c;
                 if (c > 9){
-                    cout << "Eliga una opción correcta: "; cin >> c;
+                    cout << "Eliga una opciÃ³n correcta: "; cin >> c;
                 }
                 switch(c) {
                     case 0:
@@ -100,10 +100,10 @@ int main(){
                          break;
                     case 1:
                          int nuevaCentral;
-                         cout << "Introduzca el código postal de la nueva central de paquetería: "; cin >> nuevaCentral;
+                         cout << "Introduzca el cÃ³digo postal de la nueva central de paqueterÃ­a: "; cin >> nuevaCentral;
                          while (nuevaCentral > 9999 || nuevaCentral < 999 || centralesPaq.buscarNodo(nuevaCentral)){
                             if(nuevaCentral > 9999 || nuevaCentral < 999){
-                                cout << "Debe introducir un código postal de 4 cifras: "; cin >> nuevaCentral;
+                                cout << "Debe introducir un cÃ³digo postal de 4 cifras: "; cin >> nuevaCentral;
                             } else if(centralesPaq.buscarNodo(nuevaCentral)){
                                 cout << "Esta central ya existe, introduzca una nueva: "; cin >> nuevaCentral;
                             }
@@ -112,15 +112,15 @@ int main(){
 
                          int anadirPaquetes;
                          int nPaquetes;
-                         cout << "¿Desea asignarle paquetes a la Central de Paquetería creada? \n";
-                         cout << "0. SÍ \n";
+                         cout << "Â¿Desea asignarle paquetes a la Central de PaqueterÃ­a creada? \n";
+                         cout << "0. SÃ \n";
                          cout << "1. NO" << endl;
-                         cout << "Opción: "; cin >> anadirPaquetes;
+                         cout << "OpciÃ³n: "; cin >> anadirPaquetes;
                          if (anadirPaquetes > 1){
-                            cout << "Eliga una opción correcta: "; cin >> anadirPaquetes;
+                            cout << "Eliga una opciÃ³n correcta: "; cin >> anadirPaquetes;
                          }
                          if (anadirPaquetes == 0){
-                            cout << "¿Cuántos paquetes desea asignarle?: "; cin >> nPaquetes;
+                            cout << "Â¿CuÃ¡ntos paquetes desea asignarle?: "; cin >> nPaquetes;
                             for (int i = 0; i < nPaquetes; i++){
                                 Paquete p;
                                 p.CP = nuevaCentral;
@@ -172,9 +172,9 @@ int main(){
                          cout << "Introduzca el ID del paquete que desee buscar: "; cin >> idPaquete;
                          int cpPaquete = centralesPaq.buscarPaquetePorId(idPaquete, centralesPaq.getRaiz());
                          if (CAE.buscarPaquete(idPaquete)){
-                            cout << "El paquete aún se encuentra en el CAE" << endl;
+                            cout << "El paquete aÃºn se encuentra en el CAE" << endl;
                          } else if (cpPaquete != 0){
-                            cout << "El paquete se encuentra en la central de paquetería con CP: " << cpPaquete << endl;
+                            cout << "El paquete se encuentra en la central de paqueterÃ­a con CP: " << cpPaquete << endl;
                          } else {
                             cout << "Este paquete no esta en nuestra CAE o no existe";
                          }
@@ -190,7 +190,7 @@ int main(){
                                 if (centralesPaq.eliminarPaquete(eliminarCpPaquete, eliminarIdPaquete)) cout << "Paquete eliminado correctamente \n";
                                 else cout << "No se ha eliminado el paquete correctamente \n";
                             } else {
-                                cout << "El paquete que desea eliminar aún no ha sido trasladado a su CP todavía o no existe \n";
+                                cout << "El paquete que desea eliminar aÃºn no ha sido trasladado a su CP todavÃ­a o no existe \n";
                             }
                          } else {
                             cout << "La CP introducida no existe \n";
@@ -213,7 +213,7 @@ int main(){
                                 cout << "Esta CP no existe" << endl;
                             }
                          } else {
-                            cout << "Este paquete no está en en el CAE o no existe" << endl;
+                            cout << "Este paquete no estÃ¡ en en el CAE o no existe" << endl;
                          }
 
                          break;
@@ -262,6 +262,6 @@ int main(){
         };
     };
 
-    cout << "TODOS LOS PAQUETES HAN SIDO TRASLADADOS A SU CORRESPONDIENTE CENTRAL DE PAQUETERÍA" << endl;
+    cout << "TODOS LOS PAQUETES HAN SIDO TRASLADADOS A SU CORRESPONDIENTE CENTRAL DE PAQUETERÃA" << endl;
     return 0;
 }
