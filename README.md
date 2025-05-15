@@ -1,4 +1,4 @@
-# 📦 Logistics & Parcels Simulator
+<h1 align="center"> 📦 Logistics & Parcels Simulator </h1>
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
