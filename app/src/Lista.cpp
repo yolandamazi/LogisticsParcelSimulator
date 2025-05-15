@@ -176,7 +176,7 @@ void Lista::recorrer(int orden){ //Recorrer toda la lista
             cout << "| "
             << left << setw(15) << aux->dato.id
             << "|"
-            << right << setw(6) << aux->dato.latitud.grado << "บ ";
+            << right << setw(6) << aux->dato.latitud.grado << "ยบ ";
             if (aux->dato.latitud.minuto < 10) {
                 cout << "0";
             }
@@ -186,7 +186,7 @@ void Lista::recorrer(int orden){ //Recorrer toda la lista
             }
             cout << aux->dato.latitud.segundo << "''" << setw(6)
             << "| "
-            << right << setw(6) << aux->dato.longitud.grado << "บ ";
+            << right << setw(6) << aux->dato.longitud.grado << "ยบ ";
             if (aux->dato.longitud.minuto < 10) {
                 cout << "0";
             }
@@ -209,7 +209,7 @@ void Lista::recorrer(int orden){ //Recorrer toda la lista
             cout << "| "
             << left << setw(15) << aux->dato.id
             << "|"
-            << right << setw(6) << aux->dato.latitud.grado << "บ ";
+            << right << setw(6) << aux->dato.latitud.grado << "ยบ ";
             if (aux->dato.latitud.minuto < 10) {
                 cout << "0";
             }
@@ -219,7 +219,7 @@ void Lista::recorrer(int orden){ //Recorrer toda la lista
             }
             cout << aux->dato.latitud.segundo << "''" << setw(6)
             << "| "
-            << right << setw(6) << aux->dato.longitud.grado << "บ ";
+            << right << setw(6) << aux->dato.longitud.grado << "ยบ ";
             if (aux->dato.longitud.minuto < 10) {
                 cout << "0";
             }
