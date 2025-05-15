@@ -8,7 +8,7 @@ string generarID(){
     for (int i = 0; i<=6; i++) {
             if (i==2){
                 int randomInt_letra = rand() % 27;
-                string letras[27] = {"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Ñ", "L", "K", "J", "H", "G", "F", "D", "S", "A", "Z", "X", "C", "V", "B", "N", "M"};
+                string letras[27] = {"Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Ã‘", "L", "K", "J", "H", "G", "F", "D", "S", "A", "Z", "X", "C", "V", "B", "N", "M"};
                 id.append(letras[randomInt_letra]);
             } else {
                 int randomInt_numero = rand() % 10;
@@ -24,7 +24,7 @@ string generarNIF(){
     for (int i=0; i<9; i++){
             if(i==8){
                 int randomInt_letra= rand() % 27;
-                string letras[27] = {"Q","W","E","R","T","Y","U","I","O","P","Ñ","L","K","J","H","G","F","D","S","A","Z","X","C","V","B","N","M"};
+                string letras[27] = {"Q","W","E","R","T","Y","U","I","O","P","Ã‘","L","K","J","H","G","F","D","S","A","Z","X","C","V","B","N","M"};
                 nif.append(letras[randomInt_letra]);
             }else{
                 int randomInt_numero = rand() % 10;
@@ -102,16 +102,16 @@ string generarLocalidad(){
     int randomInt_localidad = rand() % 14;
     string localidades[14] = {"Ajalvir",
                             "Daganzo",
-                            "Alcalá de Henares",
+                            "AlcalÃ¡ de Henares",
                             "Mejorada del Campo",
-                            "Nuevo Baztán",
+                            "Nuevo BaztÃ¡n",
                             "Arganda del Rey",
-                            "Carabaña",
-                            "Chinchón",
+                            "CarabaÃ±a",
+                            "ChinchÃ³n",
                             "Villarejo",
                             "Camarma de Esteruelas",
                             "Meco",
-                            "Cobeña",
+                            "CobeÃ±a",
                             "Torres de la Alameda",
                             "Los Santos de la Humosa"};
     return localidades[randomInt_localidad];
